@@ -1,0 +1,17 @@
+Name = str(input('What is your full name: \n'))
+Name_split = Name.split(' ')
+
+if len(Name_split) == 3:
+
+    firstName = Name_split[0]
+    middleName = Name_split[1]
+    lastName = Name_split[2]
+
+    print('{2:s}, {0:s}.{1:s}.'.format(firstName[0], middleName[0], lastName))
+
+elif len(Name_split) == 2:
+
+    firstName = Name_split[0]
+    lastName = Name_split[1]
+
+    print('{1:s}, {0:s}.'.format(firstName[0], lastName))
